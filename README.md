@@ -16,8 +16,10 @@ None yet.
 
 ## Published
 
-* [Coding guidelines](coding-guidelines.md) by [SuperFola](https://github.com/SuperFola)
-* [Tests organization](tests-organization.md) by [SuperFola](https://github.com/SuperFola)
+* [Coding guidelines](001-coding-guidelines.md) by [Alexandre Plateau](https://github.com/SuperFola)
+* [Tests organization](002-tests-organization.md) by [Alexandre Plateau](https://github.com/SuperFola)
+* [Naming convention](003-naming-convention.md) by [Alexandre Plateau](https://github.com/SuperFola) and [Pierre Pharel](https://github.com/PierrePharel)
+* [Module error handling](004-module-error-handling.md) by [Alexandre Plateau](https://github.com/SuperFola) and [Pierre Pharel](https://github.com/PierrePharel)
 
 ## Rejected
 

@@ -15,7 +15,7 @@ Indentation matters to us, programmers (but not to the compiler): 4 spaces or a 
 
 ## Naming convention
 
-Functions and constants (the ones in the lib and in the builtins) are named following the `first:second` convention, described in [naming-convention.md](naming-convention.md).
+Functions and constants (the ones in the lib and in the builtins) are named following the `first:second` convention, described in [003-naming-convention.md](003-naming-convention.md).
 
 ## Block definitions
 

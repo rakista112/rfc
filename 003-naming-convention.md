@@ -1,6 +1,8 @@
-# Naming convention in ArkScript - DRAFT
+# Naming convention in ArkScript
 
 This RFC is targetting naming convention in the standard library, builtins and modules, to have something uniformised.
+
+*Last modification on the 07/07/2020 at 16:22*
 
 ## Definitions
 

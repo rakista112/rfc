@@ -1,6 +1,8 @@
-# Module error handling - DRAFT
+# Module error handling
 
 This RFC is aiming at the error handling in modules, to uniformise the way we treat wrong arguments count and type errors on arguments.
+
+*Last modification on the 07/07/2020 at 16:22*
 
 ## Definitions
 
