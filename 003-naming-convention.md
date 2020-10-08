@@ -13,6 +13,8 @@ _module_: C++ plugin for the ArkScript virtual machine, allowing use of C++ code
 
 ## Naming
 
+### ArkScript
+
 It should follow `first:second`, where `first` is related to the module, builtin or lib function area of effect. `second` should be the name of the function it self.
 
 We can see this kind of method as *namespacing* in other languages such as C++.
@@ -29,6 +31,35 @@ Example:
 (console:color "red")
 ```
 
+### Modules (C++)
+
+It must follow SnakeCase naming convention like : `name_operation_...` where `name` is the name of module, `operation` what the function do and `...` mean the rest of name of function, but the recommended keyword limit in name of a function is four.
+
+Avoid C++'s namespacing
+
+Example:
+```c++
+#include <ark_msgpack.hpp>
+
+ARK_API_EXPORT Mapping_t getFunctionsMapping()
+{
+	Mapping_t map;
+
+	// msgpack objects constructors
+	map["msgpack:sbuffer"] = msgpack_sbuffer;
+	map["msgpack:objectHandle"] = msgpack_obj_handle;
+	map["msgpack:object"] = msgpack_obj;
+
+	// msgpack operations
+	map["msgpack:pack"] = msgpack_pack;
+	map["msgpack:unpack"] = msgpack_unpack;
+	map["msgpack:convert"] = msgpack_convert;
+
+	return map;
+}
+```
+
 # Authors
 
 * [Alexandre Plateau](https://github.com/SuperFola)
+* [Pierre Pharel](https://github.com/PierrePharel)
