@@ -33,7 +33,7 @@ Example:
 
 ### Modules (C++)
 
-It must follow **snake_case** naming convention like : `name_operation_...` where `name` is the name of module, `operation` what the function does and `...` mean the rest of name of function, but the recommended keyword limit in name of a function is four.
+It must follow **snake_case** naming convention like : `name_operation_...` where `name` is the name of module, `operation` what the function does and `...` means the rest of name of function, but the recommended keyword limit in name of a function is four.
 
 Avoid C++'s namespacing
 
