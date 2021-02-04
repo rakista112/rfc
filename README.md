@@ -12,7 +12,7 @@ Rejected RFC are going in the `rejected/` folder for reference.
 
 ## Drafts
 
-None yet.
+* [ArkScript macros](drafts/005-macros.md) by [Alexandre Plateau](https://github.com/SuperFola)
 
 ## Published
 
