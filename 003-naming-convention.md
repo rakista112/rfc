@@ -2,7 +2,7 @@
 
 This RFC is targetting naming convention in the standard library, builtins and modules, to have something uniformised.
 
-*Last modification on the 07/07/2020 at 16:22*
+*Last modification on the 17/02/2021 at 12:27*
 
 ## Definitions
 
@@ -41,21 +41,15 @@ Example:
 ```c++
 #include <ark_msgpack.hpp>
 
-ARK_API_EXPORT Mapping_t getFunctionsMapping()
+ARK_API_EXPORT mapping* getFunctionsMapping()
 {
-	Mapping_t map;
+    mapping* map = mapping_create(3);
 
-	// msgpack objects constructors
-	map["msgpack:sbuffer"] = msgpack_sbuffer;
-	map["msgpack:objectHandle"] = msgpack_obj_handle;
-	map["msgpack:object"] = msgpack_obj;
+    mapping_add(map[0], "msgPack", ArkMsgpack::pack);
+    mapping_add(map[1], "msgUnpack", ArkMsgpack::unpack);
+    mapping_add(map[2], "msgObjectStr", ArkMsgpack::object_str);
 
-	// msgpack operations
-	map["msgpack:pack"] = msgpack_pack;
-	map["msgpack:unpack"] = msgpack_unpack;
-	map["msgpack:convert"] = msgpack_convert;
-
-	return map;
+    return map;
 }
 ```
 
