@@ -28,6 +28,16 @@ The preprocessor should run right after the parsing and before the optimizer.
 
 A programmer should be able to remove a macro definition using `undef`, without it yielding an error if the specified macro name can not be found in the nearest scope.
 
+## Builtin macros
+
+### Creating symbols
+
+One should be able to create new AST nodes, thus new symbol names. This implies the need for `symcat`, taking a symbol and a number or string, creating a new symbol (should eliminate `.` in numbers and `"` from strings, as well as `\\`).
+
+### Getting informations on nodes
+
+We need a macro `argcount` to retrieve the number of arguments of a given function, which can be used later to craft proxy-functions through macros for said function.
+
 ## Syntax
 
 ### Conditional macro
