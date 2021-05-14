@@ -36,7 +36,7 @@ if (n[0].valueType() != ValueType::String)
 
 In case of an UserType, two checks need to be done, in this particular order (we are using boolean short circuit on the or operator):
 ```cpp
-if (n[0].valueType() != ValueType::User || !n[0].usertype_ref().is<Wanted C++ Type>())
+if (n[0].valueType() != ValueType::User || !n[0].usertypeRef().is<Wanted C++ Type>())
     throw Ark::TypeError("my:function need a single argument, a Wanted C++ Type representing <something>");
 ```
 
