@@ -24,6 +24,14 @@ We will need specific instructions which the virtual machine will eventually rea
 
 Indicates the current line of code in the original source file.
 
+### DEBUG_SUBPROBLEM
+
+Indicates the current subproblem of code at runtime.
+
+### DEBUG_REDUCTION
+
+Indicates the current reduction of code at runtime.
+
 ### DEBUG_FILE
 
 Indicates the name of the original file.
